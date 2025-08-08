@@ -66,4 +66,4 @@ Flexible layout using CSS Grid with responsive adjustments via media queries
 
 ✍️ Author
 Developed by [_Deolindo Baptista_](https://github.com/Deobap73) for the Frontend Developer Test.
-```
+

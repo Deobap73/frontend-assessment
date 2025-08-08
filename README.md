@@ -43,11 +43,13 @@ npm install
 # Start the development server
 npm run dev
 The project will be available at:
-
+```
 
 
 📸 Screenshot
-
+<br> <br>
+<img src="https://github.com/Deobap73/frontend-assessment/blob/18e4e1664e8bb2a40d670a69bd8f9fc458463e12/src/assets/Screenshot%202025-08-08%20153204.png">
+<br> <br>
 
 📄 Implementation notes
 The ProductCard is a reusable and accessible component, featuring:
@@ -63,5 +65,5 @@ Flexible layout using CSS Grid with responsive adjustments via media queries
 
 
 ✍️ Author
-Developed by Your Name for the Frontend Developer Test.
+Developed by [_Deolindo Baptista_](https://github.com/Deobap73) for the Frontend Developer Test.
 ```

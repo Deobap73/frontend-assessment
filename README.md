@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+# 🧪 Frontend Developer Test – Product Card UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the implementation of the **Frontend Developer** test based on an e-commerce project.  
+The goal was to create a **responsive Product Card component** using mock product data, following UI/UX best practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Test requirements
 
-## Expanding the ESLint configuration
+- [x] **Product image**
+- [x] **Product name**
+- [x] **Product price**
+- [x] **Variant options** (dropdown when more than one variant, label when only one)
+- [x] **“Add to Cart” button**
+- [x] Button disabled or replaced with “Out of Stock” when unavailable
+- [x] Clean and modern layout
+- [x] Responsive design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🖥️ Technologies used
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- SCSS for styling
+- [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) for currency formatting
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Installation & running locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Clone this repository
+git clone https://github.com/YOUR-USERNAME/frontend-assessment.git
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Navigate to the project folder
+cd frontend-assessment
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+The project will be available at:
+
+
+
+📸 Screenshot
+
+
+📄 Implementation notes
+The ProductCard is a reusable and accessible component, featuring:
+
+Lazy-loaded images for better performance
+
+Variant control with a dropdown or label depending on the number of options
+
+Visual state for out-of-stock products
+
+Flexible layout using CSS Grid with responsive adjustments via media queries
+
+
+
+✍️ Author
+Developed by Your Name for the Frontend Developer Test.
 ```
